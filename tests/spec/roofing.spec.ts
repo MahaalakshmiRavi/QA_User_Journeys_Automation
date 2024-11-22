@@ -2,7 +2,6 @@ import { test, expect, Page } from '@playwright/test'
 import path from 'path';
 
 test('Sanity of the journey', async ({ page }) => {
-
     const header = page.locator("((//div[@class='layout-container'])[1]//div//div)[1]");
     const footer = page.locator("(//div[@class='layout-container'])[3]");
     const verticalName = page.locator("(//div[contains(@class,'justify-between')])[1]");
